@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 
 use Systemson\ApiMaker\ApiCrudTrait as ParentTrait;
 
-trait ApiCrudTrait {
+trait ApiCrudTrait
+{
     use ParentTrait;
 
-        /**
+    /**
      * Llena la tabla pivote para las relaciones de muchos a muchos
      */
     protected function syncRelations($model, $request, array $relations)
